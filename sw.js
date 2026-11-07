@@ -1,5 +1,5 @@
 // Overload Lift Log: keeps a copy of the app on the phone so it opens without signal.
-const CACHE = 'overload-v1';
+const CACHE = 'overload-v4';
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(['./', './index.html'])));
